@@ -22,7 +22,12 @@ function Hero() {
   
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           
-          {isSignedIn ? "" :<a className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-800 focus:outline-none focus:ring active:bg-blue-800 sm:w-auto"
+          {isSignedIn ? <a
+                  className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-800 focus:outline-none focus:ring active:bg-blue-800 sm:w-auto"
+                  href="/dashboard"
+                >
+                  Go to DashBoard
+                </a> :<a className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-800 focus:outline-none focus:ring active:bg-blue-800 sm:w-auto"
             href="/sign-in">
             Get Started
           </a>  }
